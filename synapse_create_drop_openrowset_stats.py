@@ -165,9 +165,9 @@ def main():
         'Driver={ODBC Driver 17 for SQL Server};'
         f'Server={SERVER_NAME};'
         f'Database={DATABASE_NAME};'
-        f'UID={USER_NAME};'
-        f'PWD={PASSWORD}'
-        # 'Authentication=ActiveDirectoryInteractive;' 
+        #f'UID={USER_NAME};'        #Uncomment this if you want to use SQL authentication
+        #f'PWD={PASSWORD}'          #Uncomment this if you want to use SQL authentication
+        'Authentication=ActiveDirectoryInteractive;' 
     )
 
     try:
